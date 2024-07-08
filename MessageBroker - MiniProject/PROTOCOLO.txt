@@ -1,0 +1,23 @@
+Mensagem de Subscrição: JSON: {"action": "subscribe", "topic": topic} 
+                        PICKLE: {"action": "subscribe", "topic": topic} 
+                        XML: <data><action>"subscribe"</action><topic>topic</topic></data>
+
+Mensagem de Publicação: JSON: {"action": "publish", "topic": topic, "value": value}
+                        PICKLE: {"action": "publish", "topic": topic, "value": value}
+                        XML: <data><action>"publish"</action><topic>topic</topic><value>value</value></data>
+
+Mensagem de Pedido de Listagem de Tópicos: JSON: {"action": "list_topics"}
+                                           PICKLE: {"action": "list_topics"}
+                                           XML: <data><action>"list_topics"</action></data>
+
+Mensagem de Cancelamento de Subscrição: JSON: {"action": "cancel", "topic": topic}
+                                        PICKLE: {"action": "cancel", "topic": topic}
+                                        XML: <data><action>"cancel"</action><topic>topic</topic></data>
+
+Mensagem do Broker: JSON: {"action": "send", "topic": topic, "value": value}
+                    PICKLE: {"action": "send", "topic": topic, "value": value}
+                    XML: <data><action>"send"</action><topic>topic</topic><value>value</value></data>
+
+Mensagem de Identificação de Serialização: JSON: {"action": "format", "value": value} 
+                                           PICKLE: {"action": "format", "value": value}
+                                           XML: <data><action>"format"</action><value>value</value></data>
